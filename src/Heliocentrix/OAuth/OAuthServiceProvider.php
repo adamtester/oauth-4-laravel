@@ -5,7 +5,7 @@
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  */
 
-namespace Heliocentrix\OAuth;
+namespace Iog3\OAuth;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -26,7 +26,7 @@ class OAuthServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('Heliocentrix/oauth-4-laravel');
+        $this->package('iog3/oauth-4-laravel');
     }
 
     /**
