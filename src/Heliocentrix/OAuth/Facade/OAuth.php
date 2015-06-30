@@ -5,7 +5,7 @@
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  */
 
-namespace Heliocentrix\OAuth\Facade;
+namespace Iog3\OAuth\Facade;
 
 use Illuminate\Support\Facades\Facade;
 
