@@ -5,7 +5,7 @@
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  */
 
-namespace Artdarek\OAuth\Facade;
+namespace Heliocentrix\OAuth\Facade;
 
 use Illuminate\Support\Facades\Facade;
 

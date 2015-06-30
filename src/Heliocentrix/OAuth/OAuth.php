@@ -5,7 +5,7 @@
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  */
 
-namespace Artdarek\OAuth;
+namespace Heliocentrix\OAuth;
 
 use Illuminate\Support\ServiceProvider;
 
