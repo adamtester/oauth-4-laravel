@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": ">=5.3",     
-        "logical-and/php-oauth": "~0.6"
+        "and/oauth": "~0.6"
     },
     "require-dev": {
         "illuminate/support": "~4"
