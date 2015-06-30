@@ -5,7 +5,7 @@
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  */
 
-namespace Heliocentrix\OAuth;
+namespace Iog3\OAuth;
 
 use Illuminate\Support\ServiceProvider;
 
