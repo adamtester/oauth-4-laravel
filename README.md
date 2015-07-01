@@ -1,7 +1,7 @@
 # OAuth wrapper for Laravel 4
 
-oauth-4-laravel is a simple laravel 4 service provider (wrapper) for [Lusitanian/PHPoAuthLib](https://github.com/Lusitanian/PHPoAuthLib) 
-which provides oAuth support in PHP 5.3+ and is very easy to integrate with any project which requires an oAuth client.
+oauth-4-laravel is a simple laravel 4 service provider (wrapper) for the fork  [logical-and/php-oauth](https://github.com/logical-and/php-oauth) 
+which provides oAuth support in PHP 5.3+ and is very easy to integrate with any project which requires an oAuth client. Originally by artdarek but the project seemed dead.
 
 ---
  
@@ -62,7 +62,7 @@ Add oauth-4-laravel to your composer.json file:
 
 ```
 "require": {
-  "artdarek/oauth-4-laravel": "dev-master"
+  "iog3/oauth-4-laravel": "dev-master"
 }
 ```
 
@@ -80,7 +80,7 @@ Register the service provider within the ```providers``` array found in ```app/c
 'providers' => array(
 	// ...
 	
-	'Artdarek\OAuth\OAuthServiceProvider'
+	'Iog3\OAuth\OAuthServiceProvider'
 )
 ```
 
@@ -91,7 +91,7 @@ Add an alias within the ```aliases``` array found in ```app/config/app.php```:
 'aliases' => array(
 	// ...
 	
-	'OAuth' => 'Artdarek\OAuth\Facade\OAuth',
+	'OAuth' => 'Iog3\OAuth\Facade\OAuth',
 )
 ```
 
@@ -109,7 +109,7 @@ your ``app\config\`` directory (option 2).
 Create configuration file for package using artisan command
 
 ```
-$ php artisan config:publish artdarek/oauth-4-laravel
+$ php artisan config:publish iog3/oauth-4-laravel
 ```
 
 #### Option 2
@@ -152,7 +152,7 @@ return array(
 
 ### Credentials
 
-Add your credentials to ``app/config/packages/artdarek/oauth-4-laravel/config.php`` or ``app/config/oauth-4-laravel.php`` (depending on which option of configuration you choose)
+Add your credentials to ``app/config/packages/iog3/oauth-4-laravel/config.php`` or ``app/config/oauth-4-laravel.php`` (depending on which option of configuration you choose)
 
 
 The `Storage` attribute is optional and defaults to `Session`. 
@@ -179,7 +179,7 @@ $fb = OAuth::consumer('Facebook','http://url.to.redirect.to');
 ###Facebook:
 
 Configuration:
-Add your Facebook credentials to ``app/config/packages/artdarek/oauth-4-laravel/config.php``
+Add your Facebook credentials to ``app/config/packages/iog3/oauth-4-laravel/config.php``
 
 ```php
 'Facebook' => array(
@@ -238,7 +238,7 @@ public function loginWithFacebook() {
 ###Google:
 
 Configuration:
-Add your Google credentials to ``app/config/packages/artdarek/oauth-4-laravel/config.php``
+Add your Google credentials to ``app/config/packages/iog3/oauth-4-laravel/config.php``
 
 ```php
 'Google' => array(
@@ -292,7 +292,7 @@ public function loginWithGoogle() {
 ###Twitter:
 
 Configuration:
-Add your Twitter credentials to ``app/config/packages/artdarek/oauth-4-laravel/config.php``
+Add your Twitter credentials to ``app/config/packages/iog3/oauth-4-laravel/config.php``
 
 ```php
 'Twitter' => array(
@@ -351,7 +351,7 @@ public function loginWithTwitter() {
 ###Linkedin:
 
 Configuration:
-Add your Linkedin credentials to ``app/config/packages/artdarek/oauth-4-laravel/config.php``
+Add your Linkedin credentials to ``app/config/packages/iog3/oauth-4-laravel/config.php``
 
 ```php
 'Linkedin' => array(
@@ -402,7 +402,7 @@ In your Controller use the following code:
 ###Yahoo:
 
 Configuration:
-Add your Yahoo credentials to ``app/config/packages/artdarek/oauth-4-laravel/config.php``
+Add your Yahoo credentials to ``app/config/packages/iog3/oauth-4-laravel/config.php``
 
 ```php
 'Yahoo' => array(
